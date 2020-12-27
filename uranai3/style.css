@@ -1,0 +1,232 @@
+*{
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu","Cantarell", "Open Sans", "Helvetica Neue", serif;　
+  padding:0;
+  margin:0;
+  list-style: none;
+  box-sizing:content-box;
+  text-decoration: none;
+  font-weight:bold;
+  font-size:20px;
+
+}
+
+main{
+  background-image: url("img/bg3.jpg");
+
+  color:#ffffff;
+
+  padding:120px 0;
+}
+
+h1{
+  text-align: center;
+}
+
+/* 以下最初のページのcss */
+
+main.top-page{
+  padding-top: 100px;
+}
+
+h1.top-message{
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+p.input-list{
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+p.input-list select{
+  height:30px;
+}
+
+p.input-list select.year{
+  width:100px;
+}
+
+p.radio-list{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p.radio-list input{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#submit{
+  display: block;
+  width:100px;
+  margin:32px auto 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.err-msg{
+  text-align: center;
+  color:red;
+  display: none;
+}
+
+
+/* 以上最初のページのcss */
+
+.container{
+  padding:30px 0 ;
+  width:1200px;
+  height:600px;
+  margin: 0 auto 0;
+  position:relative;
+
+}
+
+img.star{
+  width:530px;
+  height:530px;
+  object-position: center;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  right:0;
+  margin:auto;
+  z-index:0;
+  display: none;
+}
+
+.deck{
+  position:absolute;
+  top:160px;
+  right:0;
+  left:0;
+  width:120px;
+  height:180px;
+  margin:auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.position{
+  -webkit-transition: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.deck-frame{
+  width:120px;
+  height:180px;
+  position:relative;
+  border:3px solid #ffffff;
+  transition-duration: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.time{
+  position: absolute;
+  top:-40px;
+  text-align: center;
+  display: none;
+}
+
+.card-text{
+  position: absolute;
+  top:220px;
+  text-align: center;
+  display: none;
+  width:100%;
+}
+
+.card-text p{
+  margin-bottom: 8px;
+}
+
+.shadow{
+  display: none;
+  position:absolute;
+  bottom:-4px;
+  right:-4px;
+  width:123px;
+  height:177px;
+  border-bottom:0.000000000000000000000000001px solid #CAC8C8;
+  border-right:0.00000000000000000000000000001px solid #CAC8C8;
+  border-radius:5px;
+}
+
+.deck img{
+  width:100%;
+  max-width:100%;
+  height:100%;
+  object-position: center;
+  transition-duration: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.deck .reverse-img,
+.deck .face-img{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.deck .reverse-img{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+
+.deck .face-img{
+  z-index:1;
+}
+
+.start{
+  position: absolute;
+  width:300px;
+  top:550px;
+  left:0;
+  right:0;
+  margin:auto;
+  text-align: center;
+  cursor:pointer;
+}
+
+.select{
+position: absolute;
+width:300px;
+top:550px;
+left:0;
+right:0;
+margin:auto;
+text-align: center;
+display: none;
+}
+
+#comment-title{
+  display: none;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#comment{
+  display: flex;
+  justify-content: space-between;
+  width:1200px;
+  height:400px;
+  margin:auto;
+}
+
+#comment .fade{
+  display: none;
+}
+
+#comment li{
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+#comment li.big{
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
