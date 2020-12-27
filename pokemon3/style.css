@@ -1,0 +1,286 @@
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family:'メイリオ', 'Meiryo', sans-serif;
+  text-decoration: none;
+}
+
+main{
+  padding:30px 0 100px;
+}
+
+button{
+  cursor: pointer;
+  padding:1px 5px;
+}
+
+button:hover{
+  opacity:0.7;
+}
+
+.hide{
+  display: none;
+}
+
+.top-page h1{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.content{
+  width:1200px;
+  margin:auto;
+}
+
+/*以下モンスター選択画面*/
+
+.monster-card-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.monster-card{
+  width:220px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.monster-img img{
+  width:120px;
+  height:120px;
+  object-position: center;
+}
+
+.monster-card ul{
+  margin-top: 4px;
+}
+
+.monster-name{
+  margin-bottom: 4px;
+}
+
+span.status{
+  margin-left: 8px;
+}
+.type-color{
+  padding:1px 5px;
+  border-radius: 2px;
+}
+
+.normal{
+  background:#FDF5E6;
+}
+
+.fire{
+  background:#FF6347;
+}
+
+.water{
+  background:#1C91FF;
+}
+
+.spark{
+  background:#FEFF99;
+}
+
+.reaf{
+  background:#99FE98;
+}
+
+.ice{
+  background:#E0FFFE;
+}
+
+.freeze{
+  background:#E0FFFE;
+}
+
+.fight{
+  background:#FFCC00;
+}
+
+.poison{
+  background:#BA55D3;
+}
+
+.earth{
+  background:#CC9900;
+}
+
+.fly{
+  background:#05BFFF;
+}
+
+.esper{
+  background:#DDA0DC;
+}
+
+.insect{
+  background:#66CEAA;
+}
+
+.rock{
+  background:#A9A9A9;
+}
+
+.goast{
+  background:#666598;
+}
+
+.doragon{
+  background:#66CCCC;
+}
+
+.select-zone{
+  text-align: center;
+}
+
+.select-zone p{
+  margin:8px 0;
+}
+
+.submit-button{
+  margin-top: 32px;
+  text-align: center;
+}
+
+.submit-button input{
+  cursor:pointer;
+}
+
+/*以上モンスター選択画面*/
+
+.monster-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.monster1{
+  text-align: right;
+}
+
+.pic{
+  text-align: center;
+  width:185px;
+  height:155px;
+}
+
+.pic img{
+  width:150px;
+  height:150px;
+  object-position: center;
+}
+
+.monster0 .pic img{
+  transform: rotateY(180deg);
+}
+
+.monster p{
+  margin-bottom: 10px;
+}
+
+.monster p.hp{
+  margin-bottom: 1px;
+}
+
+.hp-box{
+  width:1px;
+  position: relative;
+  height:20px;
+  background:#E8E8E8;
+}
+
+.hp-point{
+  width:1px;
+  position: absolute;
+  top:0;
+  left:0;
+  margin:auto;
+  height:20px;
+  background:#31E3B7;
+  transition-duration: 1.5s;
+}
+
+.hp-child{
+  transition-duration: 1.0s;
+}
+
+.monster p.hp-point{
+  margin-bottom: 0px;
+}
+
+.monster ul{
+  margin-top: 16px;
+}
+
+.monster1 ul{
+  display: none;
+}
+
+.monster li{
+  margin-bottom: 8px;
+}
+
+.monster li button{
+  cursor: pointer;
+  padding:1px 5px;
+}
+
+.monster li button:hover{
+  opacity:0.7;
+}
+
+.select-buttons{
+  margin-top: 16px;
+}
+
+.mymonter-list{
+  margin-top: 16px
+}
+
+
+.mymonter-list li{
+  margin-bottom: 8px;
+}
+
+.mymonter-list li button{
+  cursor: pointer;
+  padding:1px 5px;
+}
+
+.mymonter-list li button:hover{
+  opacity:0.7;
+}
+
+
+.battle-text{
+  width:600px;
+  height:200px;
+  margin:50px auto 0;
+  border:2px solid #000000;
+  border-radius:6px;
+}
+
+.change-message{
+  text-align: center;
+  font-size: 24px;
+  line-height:200px;
+}
+
+.battle-message{
+  text-align: center;
+  font-size: 24px;
+  line-height:200px;
+  display: none;
+}
+
+.battle-message0{
+  text-align: center;
+  font-size: 24px;
+  line-height:200px;
+
+}
