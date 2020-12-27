@@ -1,0 +1,374 @@
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family:'メイリオ', 'Meiryo', sans-serif;
+  text-decoration: none;
+}
+
+html {
+  touch-action: manipulation;
+}
+
+.hide{
+  display: none;
+}
+
+.container{
+  width:480px;
+  height:100vh;
+  margin:0 auto 0;
+  border:1px solid #000000;
+  position: relative;
+  overflow: hidden;
+  background: url("img/road.png") bottom center;
+  background-size: 100% auto;
+}
+
+#mario{
+  width:60px;
+  height:60px;
+  background-image: url("img/mario.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  /*bottom:210px;*/
+  bottom:-100px;
+  left:210px;
+  transition-duration: 3s;
+  z-index:10;
+}
+
+#mario-conrainer{
+  width:60px;
+  height:60px;
+  position: relative;
+}
+
+#greenkoura{
+  width:50px;
+  height:50px;
+  background-image: url("img/greenkoura.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom:210px;
+  left:-1000px;
+  z-index:10;
+}
+
+#redkoura{
+  width:50px;
+  height:50px;
+  background-image: url("img/redkoura.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom:210px;
+  left:-1000px;
+  z-index:10;
+}
+
+#return{
+  position: absolute;
+  width:90px;
+  height:90px;
+  z-index:90;
+  top:30px;
+  left:30px;
+}
+
+#return img{
+  width:100%;
+  height:100%;
+  max-width:100%;
+  object-position: center;
+}
+
+#item-block{
+  width:60px;
+  height:60px;
+  background-image: url("img/item.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top:-300px;
+  z-index:10;
+}
+
+#ready{
+  width:480px;
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 4px;
+  color:#C20009;
+  font-weight: bold;
+  position: absolute;
+  top:350px;
+  transform:scale(3);
+  transition-duration: 0.3s;
+}
+
+#go{
+  width:480px;
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 4px;
+  color:#C20009;
+  font-weight: bold;
+  position: absolute;
+  top:350px;
+  transform:scale(3);
+  transition-duration: 0.3s;
+}
+
+#gameover{
+  width:480px;
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 3px;
+  color:#C20009;
+  font-weight: bold;
+  position: absolute;
+  top:350px;
+}
+
+#result{
+  width:480px;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color:#C20009;
+  font-weight: bold;
+  position: absolute;
+  top:500px;
+  z-index: 11;
+}
+
+#item-box{
+  width:90px;
+  height:90px;
+  background:#000000;
+  position: absolute;
+  top:30px;
+  right:30px;
+  border:2px solid #ffffff;
+  z-index:20;
+}
+
+#item-box-container{
+  position: relative;
+  width:90px;
+  height:90px;
+}
+
+img#item-img{
+  position: absolute;
+  width:60px;
+  height:60px;
+  max-width: 60px;
+  object-position: center;
+  top:15px;
+  left:15px;
+}
+
+#right-button{
+  position: absolute;
+  bottom:120px;
+  right:10px;
+  z-index:50;
+}
+
+#left-button{
+  position: absolute;
+  bottom:120px;
+  left:10px;
+  z-index:50;
+}
+
+#use-button {
+  position: absolute;
+  bottom:130px;
+  right:160px;
+  text-decoration: none;
+  background: #C20009;
+  color: #FFF;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 5px #bd6565;
+  transition: .4s;
+}
+
+#use-button:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+}
+
+#count{
+  position: absolute;
+  bottom:130px;
+  right:260px;
+  z-index:100;
+  color:#ffffff;
+  font-size: 20px;
+}
+
+#count-up{
+  font-size: 24px;
+}
+
+.enemy{
+  width:60px;
+  height:60px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:-100px;
+  z-index:10;
+}
+
+.enemy1{
+  background-image: url("img/donkey.png");
+}
+
+.enemy2{
+  background-image: url("img/noco.png");
+}
+
+.enemy3{
+  background-image: url("img/kuppa.png");
+}
+
+.enemy4{
+  background-image: url("img/yosshi.png");
+}
+
+.enemy5{
+  background-image: url("img/luigi.png");
+}
+
+.black-box{
+  position: absolute;
+  width:480px;
+  height:100vh;
+  background:rgba(0,0,0,0.85);
+  z-index:100;
+}
+
+.black-box-container{
+  width:480px;
+  height:100vh;
+  position: relative;
+}
+
+.new-record{
+  width:480px;
+  position: absolute;
+  top:20px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color:#FFE17D;
+}
+
+.text1{
+  position: absolute;
+  color:#ffffff;
+  font-size: 32px;
+  text-align: center;
+  width:480px;
+  top:100px;
+  font-weight: bold;
+}
+
+.record-text{
+  position: absolute;
+  color:#ffffff;
+  font-size: 32px;
+  text-align: center;
+  width:480px;
+  top:180px;
+  font-weight: bold;
+}
+
+.record{
+  color:#ffffff;
+  font-size: 42px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.restart{
+  font-size: 28px;
+  position: absolute;
+  color:#ffffff;
+  text-align: center;
+  width:480px;
+  top:600px;
+}
+
+.score-title{
+  position: absolute;
+  color:#ffffff;
+  font-size: 32px;
+  text-align: center;
+  width:480px;
+  top:280px;
+  font-weight: bold;
+}
+
+.black-box ul {
+  position: absolute;
+  top:360px;
+  width:480px;
+  text-align: center;
+}
+
+.black-box ul li{
+  margin-bottom:8px;
+  font-size: 32px;
+  color:#ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 150px;
+}
+
+.black-box img.medal{
+  width:45px;
+  height:45px;
+  object-position: center;
+  position: absolute;
+  left:110px;
+}
+
+.black-box img.gold{
+  top:367px;
+}
+
+.black-box img.silver{
+  top:430px;
+}
+
+.black-box img.blonze{
+  top:497px;
+}
+
+.black-box ul li span{
+  font-size: 40px;
+  color:#ffffff;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 6px;
+}
